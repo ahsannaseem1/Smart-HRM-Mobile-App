@@ -26,7 +26,7 @@ export default function Login() {
 
             <View style={{ flex: 1, backgroundColor: 'white' }}>
 
-                <View style={{ flex: 0.50 }}>
+                <View style={{ flex: 0.35 }}>
                     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
                         <Image
                             style={{ width: '100%', height: '100%' }}
@@ -40,16 +40,16 @@ export default function Login() {
 
 
 
-                <View style={{ flex: 0.40, alignItems: 'center', justifyContent: 'center',backgroundColor:'#092636',borderStartStartRadius:50,borderStartEndRadius:50 }}>
-                    <View style={{ flex: 1, marginBottom: 40,alignItems:'left',justifyContent:'center', }}>
+                <View style={{ flex: 0.65, alignItems: 'center', justifyContent: 'center',backgroundColor:'#092636',borderStartStartRadius:50,borderStartEndRadius:50,}}>
+                    <View style={{ flex: 0.3,alignItems:'left',justifyContent:'center',marginTop:20}}>
                         <Text style={styles.title}>Login</Text>
-                        <Text style={{marginTop:8,color:'white'}}>Login with your email and password</Text>
+                        <Text style={{marginTop:10,color:'white'}}>Login with your email and password</Text>
                     
                     </View>
 
 
 
-                    <View>
+                    <View style= {{flex:0.45,marginTop:50,}}>
 
                         <TextInput
                             style={{ width: 250, height: 35, borderRadius: 5, paddingLeft: 10, borderBottomWidth: 1,borderColor:'white'}}
@@ -98,6 +98,16 @@ export default function Login() {
                        
                        
                     </View>
+
+                    <View style={{ flex: 0.25,  flexDirection: 'row',backgroundColor:'#092636' }}>
+                    <TouchableOpacity >
+                        <View style={{ backgroundColor: 'white', borderRadius: 15, width: 250, height: 35, alignItems: 'center', justifyContent: 'center',flexDirection:'row' }}>
+                        <Entypo name="login" size={18} color="black" />  
+                        <Text style={{ color: 'black', textAlign: 'center',fontWeight:'bold',marginLeft:5,fontSize:18 }}>Login</Text>
+                        </View>
+                    </TouchableOpacity>
+
+                </View>
                     
 
 
@@ -106,14 +116,7 @@ export default function Login() {
 
 
 
-                <View style={{ flex: 0.20, alignItems: 'center', justifyContent: 'center', flexDirection: 'row',backgroundColor:'#092636' }}>
-                    <TouchableOpacity >
-                        <View style={{ backgroundColor: 'white', borderRadius: 15, width: 250, height: 35, alignItems: 'center', justifyContent: 'center',flexDirection:'row' }}>
-                        <Entypo name="login" size={18} color="black" />  
-                        <Text style={{ color: 'black', textAlign: 'center',fontWeight:'bold',marginLeft:5,fontSize:18 }}>Login</Text>
-                        </View>
-                    </TouchableOpacity>
-                </View>
+               
 
                
 
@@ -133,7 +136,7 @@ const styles = StyleSheet.create({
     title: {
         // fontFamily: 'Montserrat',
         fontSize: 35, fontWeight: 'bold',
-        marginTop:25,color:'white',
+        color:'white',
     },
 
 });
